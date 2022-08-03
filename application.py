@@ -17,9 +17,21 @@ def root():
     return render_template("index.html")
 
 
-@application.route("/hello")
-def index():
-    return "Hello World from COE Team."
+@application.route("/about")
+def about():
+    return render_template("about.html")
+
+@application.route("/martime_education")
+def martime_education():
+    return render_template("maritime_education.html")
+
+@application.route("/free_trade")
+def free_trade():
+    return render_template("free_trade.html")
+
+@application.route("/grid")
+def grid():
+    return render_template("grid.html")
 
 if __name__ == "__main__":
     application.debug=True
