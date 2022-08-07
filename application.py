@@ -17,6 +17,11 @@ def root():
     return render_template("index.html")
 
 
+@application.route("/try")
+def trys():
+    return render_template("try.html")
+
+
 @application.route("/about")
 def about():
     return render_template("about.html")
