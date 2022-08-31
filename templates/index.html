@@ -1,17 +1,38 @@
 {% extends "base.html" %}
 {% block content %}
 
+<style>
+ul.a {
+  list-style-type: circle;
+}
+</style>
+
  
-{% include 'map.html' %}
+{% include 'extra.html' %}
 <!-- 
   <div style="position: absolute;right: 200px;" > -->
-    <div style="display: grid;justify-content: center">
+    <div style="display: grid;justify-content: center; padding-bottom: 10px;">
     <span style="text-transform: uppercase;" id="name" class="center">BLUE DESK</span>
-  </div> <br>
+  </div> 
+
+
+  <div style="box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px; padding: 20px;margin-left: 30px;font-size: 18px;">
+
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    
+
+  </div>
+
+
+
 
 <!--   <div id="currency"><span>Currency</span></div>
   <div id="flag"><span>Flag</span></div>
  -->
 
 {% endblock content %}
+
 
